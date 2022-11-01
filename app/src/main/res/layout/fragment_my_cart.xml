@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyCart"
+    android:orientation="vertical">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+      android:orientation="vertical">
+
+   <TextView
+       android:id="@+id/categoryname"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentTop="true"
+       android:layout_marginTop="14dp"
+       android:text="My Cart >"
+       android:layout_marginLeft="10dp"
+       android:paddingTop="10dp"
+       android:textColor="@color/black"
+       android:textSize="18dp"
+       android:textStyle="bold" />
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/cartProduct"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="20dp"
+       tools:listitem="@layout/cart_view" />
+
+   </LinearLayout>
+
+   <TextView
+       android:id="@+id/checkout"
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:layout_alignParentBottom="true"
+       android:background="@color/black"
+       android:gravity="center"
+       android:text="checkout"
+       android:textColor="@color/white"
+       android:textSize="17sp" />
+
+</RelativeLayout>
